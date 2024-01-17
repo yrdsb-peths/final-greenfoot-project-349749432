@@ -19,5 +19,19 @@ public class MyWorld extends World
         
         Rocket rocket = new Rocket();
         addObject(rocket, 300, 300);
+        
+    
+        Bomb bomb = new Bomb();
+        addObject(bomb, 300, 200);
+        
+        boom();
+    }
+    
+    public void boom()
+    { 
+            Bomb bomb = new Bomb();
+            int x = Greenfoot.getRandomNumber(600);
+            int y = Greenfoot.getRandomNumber(600);
+            addObject(bomb, x, y);
     }
 }
